@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
                    int resultado = edadint * 7;
                    String resultadostring = "La edad de tu peludo es: "+ resultado + "años";
                    resultexto.setText(resultadostring);
+               }
+               else
+               {
+                   Toast.makeText(MainActivity.this, "LLena la edad", Toast.LENGTH_LONG).show();
                }
             }
         });
